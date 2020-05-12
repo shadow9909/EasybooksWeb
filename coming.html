@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>EasyBooks</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="rel.css">
+  <link rel="stylesheet" href="coming.css">
+</head>
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="100">
+ <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+ 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand " href="file:///root/Desktop/website/bootheader.html#">EasyBooks        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+	
+      <ul class="nav navbar-nav navbar-right">
+       <!-- <li ><a href="#">Home</a></li> -->
+       
+        <li><a href="file:///root/Desktop/website/bootheader.html#about">About</a></li>
+        <li><a href="file:///root/Desktop/website/bootheader.html#services">Services</a></li>
+ <li><a href="file:///root/Desktop/website/bootheader.html#contact">Contact</a></li>
+        
+<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Others Facilities<span class="caret"></span></a>
+        <ul class="dropdown-menu gg">
+	          <li class="drpsize"><a href="coming.html" target="_blank">E-Books</a></li>
+          <li class="drpsize"><a href="comingcourse.html">Course Material</a></li>
+          <li class="drpsize"><a href="majorproject.html">Major Projects</a></li>
+          <li class="drpsize"><a href="team.html">The Team</a></li>
+        </ul>
+      </li>
+       
+      </ul>
+      	</div>
+    
+ 
+</nav>
+</div>
+
+
+<br><br><br><br><br><br>
+  <div class="container mm">
+	<h1 class="text-center">UNLIMITED E-BOOKS</h1>
+    <h2 class="text-center">COMING SOON</h2>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+</div>
+
+<br><br><br>
+<!-- Footer -->
+<br><br><br>
+<footer class="footer1 footer footer-hover ">
+  <i class="fa fa-facebook-official ss-hover-opacity  style="font-size:36px"></i>
+  <i class="fa fa-instagram ss-hover-opacity  style="font-size:36px;"></i>
+ 
+  <i class="fa fa-pinterest-p ss-hover-opacity  style="font-size:36px"></i>
+  <i class="fa fa-google-plus ss-hover-opacity  style="font-size:36px"></i>
+  <i class="fa fa-linkedin ss-hover-opacity  style="font-size:36px"></i>
+<br>
+  <p class=""> <a href="#" target="_blank">Copywrite@2018 EASYBOOKS. Created by Shadow</a></p>
+</footer>
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 1, 2018 00:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(countdownfunction);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+</body>
+</html>
+
